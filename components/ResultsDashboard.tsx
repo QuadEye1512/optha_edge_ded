@@ -12,7 +12,7 @@ interface ResultsDashboardProps {
 }
 
 export default function ResultsDashboard({ mode, state, result, error }: ResultsDashboardProps) {
-  const loadingLabel = mode === 'severity' ? 'Running DR severity model (EfficientNet-B0)...' : 'Running DR detection model...';
+  const loadingLabel = mode === 'severity' ? 'Running DR severity model (MobileNet V3 Large)...' : 'Running DR detection model...';
 
   // IDLE
   if (state === 'idle') {

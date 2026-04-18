@@ -81,7 +81,7 @@ export default function HomePage() {
     mode === 'severity' ? 'DR Severity Grading' : 'DR / Non-DR Detection';
   const modeDesc =
     mode === 'severity'
-      ? 'Upload a fundus photograph for 5-level DR severity grading (EfficientNet-B0).'
+      ? 'Upload a fundus photograph for 5-level DR severity grading (MobileNet V3 Large).'
       : 'Upload a fundus photograph for binary DR screening.';
   const infoTitle =
     mode === 'severity' ? 'DR Severity Grading' : 'Binary DR Screening';
