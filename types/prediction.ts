@@ -30,3 +30,14 @@ export interface ApiResponse {
   result?: PredictionResult;
   error?: string;
 }
+
+// ── Disease classification types (used by `DiseaseResult` component)
+export interface DiseaseClass {
+  name: string;
+  percentage: number; // 0-100
+}
+
+export interface DiseaseResult {
+  topPrediction: string;
+  classes: DiseaseClass[];
+}
